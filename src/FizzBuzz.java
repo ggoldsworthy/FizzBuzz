@@ -11,7 +11,7 @@ class FizzBuzz {
         }
     }
 
-    private static void fizzBuzz(int i) {
+    public static void fizzBuzz(int i) {
         // Find out which numbers divide i.
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
@@ -33,6 +33,14 @@ class FizzBuzz {
 
             System.out.println(i);
 
+        }
+    }
+
+    public static void main() {
+
+        for (int i = 1; i < 100; i++) {
+
+            fizzBuzz(i);
         }
     }
 }
